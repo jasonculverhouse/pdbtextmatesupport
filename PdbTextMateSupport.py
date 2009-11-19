@@ -17,7 +17,7 @@ def mate(self):
         if have_appscript:
             app("TextMate").get_url(tm_url)
         else:
-            system('open %s' % tm_url)
+            system('open %s' % tm_url.replace('&', '\&'))
 
 def preloop(self):
     mate(self)
