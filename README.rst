@@ -1,3 +1,12 @@
+This is a fork of Ulrich Petri's branch
+=======================================
+It uses os.path.realpath() to allow for opening the file in the same project
+window in the cases where the edited file is accessed through a symbolic
+link.
+
+Matthew Schinckel <matt@schinckel.net>
+2009-11-20
+
 This is a fork of PdbTextMateSupport 0.3
 ========================================
 It tries to invoke the applescript call through py-appscript_ which is much 
