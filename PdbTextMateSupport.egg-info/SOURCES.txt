@@ -2,6 +2,7 @@ PdbTextMateSupport.py
 README.txt
 pdbrc.sample
 pdbtmsupport
+setup.cfg
 setup.py
 PdbTextMateSupport.egg-info/PKG-INFO
 PdbTextMateSupport.egg-info/SOURCES.txt

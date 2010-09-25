@@ -1,13 +1,13 @@
 from setuptools import setup, find_packages
 
 setup(name = 'PdbTextMateSupport',
-      version = '0.3',
+      version = '0.5',
       description = 'Display source code in TextMate while debugging with pdb.',
       keywords = 'textmate pdb',
-      author = 'Andreas Zeidler',
-      author_email = 'az@zitc.de',
-      url = 'https://svn.zitc.de/trac/pdbtextmatesupport',
-      download_url = 'http://cheeseshop.python.org/pypi/PdbTextMateSupport/',
+      author = 'Matthew Schinckel',
+      author_email = 'matt@schinckel.net',
+      url = 'https://github.com/schinckel/pdbtextmatesupport',
+      download_url = 'http://cheeseshop.python.org/pypi/PdbTextMateSupport2/',
       license = 'GPL',
       py_modules = ['PdbTextMateSupport'],
       scripts = ['pdbtmsupport'],
