@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-setup(name = 'PdbTextMateSupport',
+setup(name = 'PdbTextMateSupport2',
       version = '0.5',
       description = 'Display source code in TextMate while debugging with pdb.',
       keywords = 'textmate pdb',

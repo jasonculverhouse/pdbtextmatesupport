@@ -1,5 +1,4 @@
 PdbTextMateSupport.py
-README.txt
 pdbrc.sample
 pdbtmsupport
 setup.cfg
