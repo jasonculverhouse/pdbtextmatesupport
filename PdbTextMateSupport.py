@@ -17,7 +17,8 @@ def mate(self):
         if have_appscript:
             app("TextMate").get_url(tm_url)
         else:
-            system('open %s' % tm_url.replace('&', '\&'))
+            osa_cmd = 'tell application "TextMate" to get url "%s"' % tm_url
+            system('osascript -e \'%s\'' % osa_cmd)
 
 def preloop(self):
     mate(self)
