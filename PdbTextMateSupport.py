@@ -1,6 +1,14 @@
 from os.path import exists, realpath
 from os import system
 
+
+OSA_TEMEPLATE = """tell application "System Events"
+    tell application "TextMate" to get url "%s"
+    tell process "TextMate"
+        keystroke tab using {command down}
+    end tell
+end tell"""
+
 have_appscript = False
 try:
     from appscript import app
@@ -17,7 +25,7 @@ def mate(self):
         if have_appscript:
             app("TextMate").get_url(tm_url)
         else:
-            osa_cmd = 'tell application "TextMate" to get url "%s"' % tm_url
+            osa_cmd = OSA_TEMEPLATE % tm_url
             system('osascript -e \'%s\'' % osa_cmd)
 
 def preloop(self):
